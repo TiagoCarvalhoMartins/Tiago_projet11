@@ -8,26 +8,19 @@ import Footer from '../components/Footer'
 import '../styles/Location.css'
 import JSON from '../data/data.json'
 import { useParams } from 'react-router-dom'
-import React, { useState } from 'react'
 
 function Location() {
   let params = useParams()
-  const JSONFiltered = JSON.id.filter((id) => id == params)
-  console.log(params) // 👉️ {userId: '4200'}
-  const [toggle, setToggle] = useState(false)
-  let display = ''
-  if (toggle == true) {
-    display = 'block'
-  } else {
-    display = 'none'
-  }
+  const JSONFiltered = JSON.find((location) => location.id == params.id)
+  console.log(JSONFiltered)
+
 
   return (
     <div className="body">
       <Header />
       <div className="container_location">
-        <Slider />
-        <MainInformations />
+        <Slider data={JSONFiltered}/>
+        <MainInformations data={JSONFiltered}/>
         <div className="tagRating">
           {JSONFiltered.tags.map((tag) => (
             <Tag content={tag} key={tag} />
@@ -35,18 +28,10 @@ function Location() {
         </div>
         <div className="toggleButton">
           <div className="descriptionToggle">
-            <Button title="Description" />
-            <div className="description" style={{ display: display }}>
-              <p>{JSONFiltered.description}</p>
-            </div>
+            <Button title="Description" texte={JSONFiltered.description}/>
           </div>
           <div className="equipmentsToggle">
-            <Button title="Équipements" />
-            <div className="equipments" style={{ display: display }}>
-              {JSONFiltered.equipments.map((equipment) => (
-                <Equipment content={equipment} key={equipment} />
-              ))}
-            </div>
+            <Button title="Équipements" texte={JSONFiltered.equipments.join(', ')}/>
           </div>
         </div>
       </div>

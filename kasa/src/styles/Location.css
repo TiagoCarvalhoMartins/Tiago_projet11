@@ -84,6 +84,7 @@ button {
   flex-direction: column;
   justify-content: center;
   background-color: #f7f7f7;
+  border-radius: 10px;
   padding-top: 18px;
   height: 156px;
   color: #ff6060;

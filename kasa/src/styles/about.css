@@ -1,0 +1,15 @@
+.container_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 31px;
+}
+
+.container_about .descriptionToggle {
+    width: 75%;
+    margin-top: 21px;
+}
+
+.container_about .descriptionToggle button {
+    width: 100%;
+}

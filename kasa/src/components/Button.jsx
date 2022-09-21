@@ -8,7 +8,14 @@ function Button(props) {
   } else {
     display = 'none'
   }
-  return <button onClick={() => setToggle(!toggle)}>{props.title}</button>
+  return (
+    <div className="descriptionToggle">
+    <button onClick={() => setToggle(!toggle)}>{props.title}</button>
+    <div className="description" style={{ display: display }}>
+      <p>{props.texte}</p>
+    </div>
+  </div>
+  )
 }
 
 export default Button

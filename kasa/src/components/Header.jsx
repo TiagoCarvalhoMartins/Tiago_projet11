@@ -6,10 +6,12 @@ function Header() {
   return (
     <header>
       <div className="container">
+      <Link to="/">
         <img src={logo} alt="Kasa" className="kasa-logo" />
+        </Link>
         <ul>
           <li>
-            <Link to="/about">
+            <Link to="/">
               <h2>Accueil</h2>
             </Link>
           </li>

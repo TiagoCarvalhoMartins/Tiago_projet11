@@ -5,6 +5,10 @@
   margin: 57px 100px 57px 100px;
 }
 
+.container img {
+  margin-top: 20px;
+}
+
 .container ul {
   display: flex;
   list-style: none;
@@ -13,6 +17,10 @@
 }
 
 .container a {
+  text-decoration: none;
+}
+
+.container h2 {
   text-decoration: none;
   color: #ff6060;
   font-size: 24px;
