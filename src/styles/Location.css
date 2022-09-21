@@ -1,0 +1,114 @@
+.container_location {
+  margin: 0 103px 20px 103px;
+}
+
+.pictures {
+  text-align: center;
+}
+
+.slider {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 415px;
+  width: 1240px;
+}
+
+.mainInformations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleLocalisation h2 {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.titleLocalisation p {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.seller {
+  display: flex;
+}
+
+.seller p {
+  color: #ff6060;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.imageSeller {
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+}
+
+.tagRating {
+  display: flex;
+}
+
+.toggleButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptionToggle {
+  width: 584px;
+}
+
+.equipmentsToggle {
+  width: 584px;
+}
+
+button {
+  background-color: #ff6060;
+  text-align: left;
+  color: white;
+  border: none;
+  width: 582px;
+  height: 52px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding-top: 18px;
+  height: 156px;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.description p {
+  margin-top: 0px;
+}
+
+.equipments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 18px;
+  height: 156px;
+  background-color: #f7f7f7;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.equipments p {
+  margin-top: 0px;
+  margin-bottom: 0;
+}

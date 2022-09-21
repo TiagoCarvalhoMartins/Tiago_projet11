@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../assets/fonts/static/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.banner {
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin: 50px 100px 0px 100px;
+  padding: 56px 30px 0px 30px;
+}

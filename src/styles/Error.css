@@ -1,0 +1,32 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorTitle {
+  font-size: 288px;
+  font-weight: 700;
+  color: #ff6060;
+  margin: 0px;
+}
+
+.errorText {
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+  margin-top: 66px;
+  margin-bottom: 0;
+}
+
+.error ul {
+  margin-top: 180px;
+  margin-bottom: 160px;
+}
+
+.error a {
+  text-decoration: underline;
+  color: #ff6060;
+  font-size: 18px;
+}
