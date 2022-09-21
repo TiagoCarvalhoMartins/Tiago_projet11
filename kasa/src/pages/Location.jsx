@@ -2,7 +2,6 @@ import Header from '../components/Header'
 import Slider from '../components/location/Slider'
 import MainInformations from '../components/location/MainInformations'
 import Tag from '../components/location/Tag'
-import Equipment from '../components/location/Equipment'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 import '../styles/Location.css'
@@ -11,7 +10,7 @@ import { useParams } from 'react-router-dom'
 
 function Location() {
   let params = useParams()
-  const JSONFiltered = JSON.find((location) => location.id == params.id)
+  const JSONFiltered = JSON.find((location) => location.id === params.id)
   console.log(JSONFiltered)
 
 

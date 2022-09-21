@@ -3,7 +3,6 @@ import banner from '../assets/banner.png'
 import Footer from '../components/Footer'
 import Button from '../components/Button'
 import '../styles/about.css'
-import React, { useState } from 'react'
 
 function APropos() {
 
