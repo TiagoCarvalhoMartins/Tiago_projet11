@@ -1,6 +1,7 @@
 import Header from './Header'
 import Footer from './Footer'
 import '../styles/Error.css'
+import { Link } from 'react-router-dom'
 
 function Error() {
   return (
@@ -13,7 +14,9 @@ function Error() {
         </h3>
         <ul>
           <li>
-            <a href="https://example.com">Retourner sur la page d’accueil</a>
+          <Link to="/">
+            <p>Retourner sur la page d’accueil</p>
+            </Link>
           </li>
         </ul>
       </div>
